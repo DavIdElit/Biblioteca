@@ -1,3 +1,2 @@
-# Grupo07_Biblioteca
+# Biblioteca
 
-Trabajo de la asignatura Tecnologia Orientada a Objetos, realizado por Jaime Cabal, David de Pablo y Samuel Ruiz
