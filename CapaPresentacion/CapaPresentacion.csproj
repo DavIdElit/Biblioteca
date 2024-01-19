@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDB7B7AF-F718-4472-B6E1-9467CDA0B499}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatosLibro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatosLibro.Designer.cs">
+      <DependentUpon>DatosLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatosUsuario.Designer.cs">
+      <DependentUpon>DatosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEjemplares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEjemplares.Designer.cs">
+      <DependentUpon>FEjemplares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLibro.Designer.cs">
+      <DependentUpon>FLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FClave.Designer.cs">
+      <DependentUpon>FClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDatos.Designer.cs">
+      <DependentUpon>FDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoEjemplares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoEjemplares.Designer.cs">
+      <DependentUpon>FListadoEjemplares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoLibros.Designer.cs">
+      <DependentUpon>FListadoLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoLibrosUnoAUno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoLibrosUnoAUno.Designer.cs">
+      <DependentUpon>FListadoLibrosUnoAUno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoPrestamos.Designer.cs">
+      <DependentUpon>FListadoPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListadoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListadoUsuarios.Designer.cs">
+      <DependentUpon>FListadoUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPrestamosUnoaUno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPrestamosUnoaUno.Designer.cs">
+      <DependentUpon>FPrestamosUnoaUno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPrestamo.Designer.cs">
+      <DependentUpon>FPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPrincipal.Designer.cs">
+      <DependentUpon>FPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUsuario.Designer.cs">
+      <DependentUpon>FUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUsuarioDesplegable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUsuarioDesplegable.Designer.cs">
+      <DependentUpon>FUsuarioDesplegable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUsuariosUnoaUno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUsuariosUnoaUno.Designer.cs">
+      <DependentUpon>FUsuariosUnoaUno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramaInicio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatosPrestamo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatosPrestamo.Designer.cs">
+      <DependentUpon>DatosPrestamo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DatosLibro.resx">
+      <DependentUpon>DatosLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosPrestamo.resx">
+      <DependentUpon>DatosPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosUsuario.resx">
+      <DependentUpon>DatosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEjemplares.resx">
+      <DependentUpon>FEjemplares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLibro.resx">
+      <DependentUpon>FLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FClave.resx">
+      <DependentUpon>FClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDatos.resx">
+      <DependentUpon>FDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoEjemplares.resx">
+      <DependentUpon>FListadoEjemplares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoLibros.resx">
+      <DependentUpon>FListadoLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoLibrosUnoAUno.resx">
+      <DependentUpon>FListadoLibrosUnoAUno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoPrestamos.resx">
+      <DependentUpon>FListadoPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListadoUsuarios.resx">
+      <DependentUpon>FListadoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPrestamo.resx">
+      <DependentUpon>FPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPrestamosUnoaUno.resx">
+      <DependentUpon>FPrestamosUnoaUno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPrincipal.resx">
+      <DependentUpon>FPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUsuario.resx">
+      <DependentUpon>FUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUsuarioDesplegable.resx">
+      <DependentUpon>FUsuarioDesplegable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUsuariosUnoaUno.resx">
+      <DependentUpon>FUsuariosUnoaUno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogicaNegocio\LogicaNegocio.csproj">
+      <Project>{0af2d728-1ecf-49a8-8e20-a5280e670f90}</Project>
+      <Name>LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModeloDominio\ModeloDominio.csproj">
+      <Project>{69d756cf-954c-4e65-b4cd-11a86a439dd4}</Project>
+      <Name>ModeloDominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
